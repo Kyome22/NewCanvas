@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  NewCanvas
+
+  Created by Takuto Nakamura on 2021/06/25.
+  
+*/
+
+"openNewCanvas" = "新規キャンバスを開く";
+"newCanvas" = "新規キャンバス";
+"createCanvas" = "空のキャンバスを作成する。";
+"saveOpen" = "保存して開く";

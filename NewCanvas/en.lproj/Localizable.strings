@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  NewCanvas
+
+  Created by Takuto Nakamura on 2021/06/25.
+  
+*/
+
+"ExtensionInformative" = "NewCanvas extension requires permission.";
+"ExtensionMessage" = "Please give permission in the system preferences.";
+"openSystemPreferences" = "Open System Preferences";
+"cancel" = "Cancel";
+
+"AlreadyInformative" = "NewCanvas extension has already been allowed.";
