@@ -6,9 +6,5 @@
   
 */
 
-"ExtensionInformative" = "NewCanvas extension requires permission.";
-"ExtensionMessage" = "Please give permission in the system preferences.";
-"openSystemPreferences" = "Open System Preferences";
-"cancel" = "Cancel";
-
-"AlreadyInformative" = "NewCanvas extension has already been allowed.";
+"NotAllowedInformative" = "NewCanvas extension is not been allowed.";
+"AllowedInformative" = "NewCanvas extension has already been allowed.";

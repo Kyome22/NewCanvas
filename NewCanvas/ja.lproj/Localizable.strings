@@ -6,9 +6,5 @@
   
 */
 
-"ExtensionInformative" = "NewCanvasの拡張機能には許可が必要です。";
-"ExtensionMessage" = "システム環境設定にて許可を与えてください。";
-"openSystemPreferences" = "システム環境設定を開く";
-"cancel" = "キャンセル";
-
-"AlreadyInformative" = "NewCanvasの拡張機能は許可済みです。";
+"NotAllowedInformative" = "NewCanvasの拡張機能は許可されていません。";
+"AllowedInformative" = "NewCanvasの拡張機能は許可済みです。";

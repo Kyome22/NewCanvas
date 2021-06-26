@@ -10,27 +10,37 @@ import FinderSync
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    var mainWC: NSWindowController?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        DispatchQueue.main.async {
-            let alert = NSAlert()
-            if FIFinderSyncController.isExtensionEnabled {
-                alert.alertStyle = .informational
-                alert.informativeText = "AlreadyInformative".localized
-                alert.addButton(withTitle: "OK")
-            } else {
-                alert.alertStyle = .warning
-                alert.informativeText = "ExtensionInformative".localized
-                alert.messageText = "ExtensionMessage".localized
-                alert.addButton(withTitle: "openSystemPreferences".localized)
-                alert.addButton(withTitle: "cancel".localized)
-            }
-            if alert.runModal() == .alertFirstButtonReturn {
-                FIFinderSyncController.showExtensionManagementInterface()
-                NSApplication.shared.terminate(nil)
-            }
+        openPreferences()
+    }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
+    
+    func openPreferences() {
+        if mainWC == nil {
+            let sb = NSStoryboard(name: "PreferencesTab", bundle: nil)
+            mainWC = (sb.instantiateInitialController() as! NSWindowController)
+            mainWC!.window?.delegate = self
         }
+        NSApp.activate(ignoringOtherApps: true)
+        mainWC?.showWindow(nil)
     }
 
+}
+
+extension AppDelegate: NSWindowDelegate {
+    
+    func windowWillClose(_ notification: Notification) {
+        guard let window = notification.object as? NSWindow else { return }
+        if window === mainWC?.window {
+            mainWC = nil
+        }
+    }
+    
 }
 
 extension String {

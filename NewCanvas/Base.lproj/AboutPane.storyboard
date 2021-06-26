@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bU7-R8-ocO">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController title="About" showSeguePresentationStyle="single" id="bU7-R8-ocO" customClass="AboutPane" customModule="NewCanvas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="140"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbO-ZM-fWK">
+                                <rect key="frame" x="40" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OuW-BD-aH0"/>
+                                    <constraint firstAttribute="width" constant="100" id="od7-bN-eEa"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="3NM-xO-STz"/>
+                            </imageView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ycb-14-vuR">
+                                <rect key="frame" x="160" y="20" width="200" height="100"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4gH-m1-aF2">
+                                        <rect key="frame" x="-2" y="65" width="161" height="35"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="NewCanvas" id="6R7-8W-PY5">
+                                            <font key="font" metaFont="system" size="30"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nzV-Ni-ArJ">
+                                        <rect key="frame" x="-2" y="0.0" width="147" height="14"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="©︎ 2021 Takuto Nakamura" id="CFd-MP-aB2">
+                                            <font key="font" metaFont="system" size="11"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4sE-Lg-w95">
+                                        <rect key="frame" x="-2" y="41" width="69" height="16"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="version 1.0" id="c74-d9-XRN">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nzV-Ni-ArJ" secondAttribute="trailing" constant="20" symbolic="YES" id="008-y4-O4j"/>
+                                    <constraint firstItem="4sE-Lg-w95" firstAttribute="top" secondItem="4gH-m1-aF2" secondAttribute="bottom" constant="8" id="7gx-1g-KXa"/>
+                                    <constraint firstItem="4gH-m1-aF2" firstAttribute="leading" secondItem="ycb-14-vuR" secondAttribute="leading" id="FS2-xx-kC0"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4gH-m1-aF2" secondAttribute="trailing" constant="20" symbolic="YES" id="JVI-jp-ubK"/>
+                                    <constraint firstItem="4sE-Lg-w95" firstAttribute="leading" secondItem="ycb-14-vuR" secondAttribute="leading" id="Ohc-gu-Vcd"/>
+                                    <constraint firstItem="nzV-Ni-ArJ" firstAttribute="leading" secondItem="ycb-14-vuR" secondAttribute="leading" id="YiF-p9-MXQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="c6i-TA-byW"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4sE-Lg-w95" secondAttribute="trailing" constant="20" symbolic="YES" id="cSr-ug-4FL"/>
+                                    <constraint firstAttribute="width" constant="200" id="hpO-nR-m1J"/>
+                                    <constraint firstAttribute="bottom" secondItem="nzV-Ni-ArJ" secondAttribute="bottom" id="pK1-Z1-dAR"/>
+                                    <constraint firstItem="4gH-m1-aF2" firstAttribute="top" secondItem="ycb-14-vuR" secondAttribute="top" id="svZ-SA-KeU"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ycb-14-vuR" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" constant="20" id="AQx-jk-Bzn"/>
+                            <constraint firstItem="qbO-ZM-fWK" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" constant="20" id="QoY-h2-57s"/>
+                            <constraint firstItem="qbO-ZM-fWK" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" constant="40" id="Z2i-Ei-zOn"/>
+                            <constraint firstItem="ycb-14-vuR" firstAttribute="leading" secondItem="qbO-ZM-fWK" secondAttribute="trailing" constant="20" id="tNL-sc-K9H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="copyrightLabel" destination="nzV-Ni-ArJ" id="GCq-Qp-dWS"/>
+                        <outlet property="versionLabel" destination="4sE-Lg-w95" id="ixA-pF-vcQ"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="100" height="100"/>
+    </resources>
+</document>

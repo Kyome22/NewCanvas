@@ -16,6 +16,12 @@
 		1C9C71F4268622CD006448E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C71F6268622CD006448E6 /* Localizable.strings */; };
 		1C9C71FB26862686006448E6 /* AccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C71FA26862686006448E6 /* AccessoryView.swift */; };
 		1C9C71FC2686298A006448E6 /* AccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C71FE2686298A006448E6 /* AccessoryView.xib */; };
+		1C9C720226870C6A006448E6 /* PreferencesTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C720126870C6A006448E6 /* PreferencesTabVC.swift */; };
+		1C9C720A268710C9006448E6 /* GeneralPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C7209268710C9006448E6 /* GeneralPane.swift */; };
+		1C9C720C268710D7006448E6 /* AboutPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C720B268710D7006448E6 /* AboutPane.swift */; };
+		1C9C721126871A39006448E6 /* GeneralPane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C721326871A39006448E6 /* GeneralPane.storyboard */; };
+		1C9C721726871BA1006448E6 /* AboutPane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C721926871BA1006448E6 /* AboutPane.storyboard */; };
+		1C9C721C26871BC1006448E6 /* PreferencesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C721E26871BC1006448E6 /* PreferencesTab.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,15 @@
 		1C9C71FA26862686006448E6 /* AccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryView.swift; sourceTree = "<group>"; };
 		1C9C71FD2686298A006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AccessoryView.xib; sourceTree = "<group>"; };
 		1C9C72002686298E006448E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AccessoryView.strings; sourceTree = "<group>"; };
+		1C9C720126870C6A006448E6 /* PreferencesTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTabVC.swift; sourceTree = "<group>"; };
+		1C9C7209268710C9006448E6 /* GeneralPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPane.swift; sourceTree = "<group>"; };
+		1C9C720B268710D7006448E6 /* AboutPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPane.swift; sourceTree = "<group>"; };
+		1C9C721226871A39006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GeneralPane.storyboard; sourceTree = "<group>"; };
+		1C9C721626871A57006448E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/GeneralPane.storyboard; sourceTree = "<group>"; };
+		1C9C721826871BA1006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AboutPane.storyboard; sourceTree = "<group>"; };
+		1C9C721B26871BA5006448E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AboutPane.strings; sourceTree = "<group>"; };
+		1C9C721D26871BC1006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PreferencesTab.storyboard; sourceTree = "<group>"; };
+		1C9C722026871BC3006448E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/PreferencesTab.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +118,12 @@
 			children = (
 				1C9C71DA26861E40006448E6 /* main.swift */,
 				1C9C71AC26861B81006448E6 /* AppDelegate.swift */,
+				1C9C721E26871BC1006448E6 /* PreferencesTab.storyboard */,
+				1C9C720126870C6A006448E6 /* PreferencesTabVC.swift */,
+				1C9C721326871A39006448E6 /* GeneralPane.storyboard */,
+				1C9C7209268710C9006448E6 /* GeneralPane.swift */,
+				1C9C721926871BA1006448E6 /* AboutPane.storyboard */,
+				1C9C720B268710D7006448E6 /* AboutPane.swift */,
 				1C9C71B026861B82006448E6 /* Assets.xcassets */,
 				1C9C71B526861B82006448E6 /* Info.plist */,
 				1C9C71B626861B82006448E6 /* NewCanvas.entitlements */,
@@ -206,7 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9C71B126861B82006448E6 /* Assets.xcassets in Resources */,
+				1C9C721726871BA1006448E6 /* AboutPane.storyboard in Resources */,
 				1C9C71DD2686204C006448E6 /* Localizable.strings in Resources */,
+				1C9C721C26871BC1006448E6 /* PreferencesTab.storyboard in Resources */,
+				1C9C721126871A39006448E6 /* GeneralPane.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9C720C268710D7006448E6 /* AboutPane.swift in Sources */,
 				1C9C71DC26861FE8006448E6 /* main.swift in Sources */,
 				1C9C71AD26861B81006448E6 /* AppDelegate.swift in Sources */,
+				1C9C720A268710C9006448E6 /* GeneralPane.swift in Sources */,
+				1C9C720226870C6A006448E6 /* PreferencesTabVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +303,33 @@
 				1C9C72002686298E006448E6 /* ja */,
 			);
 			name = AccessoryView.xib;
+			sourceTree = "<group>";
+		};
+		1C9C721326871A39006448E6 /* GeneralPane.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C9C721226871A39006448E6 /* Base */,
+				1C9C721626871A57006448E6 /* ja */,
+			);
+			name = GeneralPane.storyboard;
+			sourceTree = "<group>";
+		};
+		1C9C721926871BA1006448E6 /* AboutPane.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C9C721826871BA1006448E6 /* Base */,
+				1C9C721B26871BA5006448E6 /* ja */,
+			);
+			name = AboutPane.storyboard;
+			sourceTree = "<group>";
+		};
+		1C9C721E26871BC1006448E6 /* PreferencesTab.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C9C721D26871BC1006448E6 /* Base */,
+				1C9C722026871BC3006448E6 /* ja */,
+			);
+			name = PreferencesTab.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

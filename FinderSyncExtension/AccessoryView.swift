@@ -17,6 +17,11 @@ class AccessoryView: NSView {
     @IBOutlet weak var heightField: NSTextField!
     @IBOutlet weak var fillColorWell: NSColorWell!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        NSColor.ignoresAlpha = false
+    }
+    
     var size: NSSize {
         var w = widthField.integerValue
         var h = heightField.integerValue
