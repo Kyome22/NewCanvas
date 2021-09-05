@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C39EA0126E3AC0200CA17A7 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C39EA0026E3AC0200CA17A7 /* Media.xcassets */; };
+		1C39EA0326E3D3CF00CA17A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C39EA0226E3D3CF00CA17A7 /* Extensions.swift */; };
 		1C9C71AD26861B81006448E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C71AC26861B81006448E6 /* AppDelegate.swift */; };
 		1C9C71B126861B82006448E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C71B026861B82006448E6 /* Assets.xcassets */; };
 		1C9C71DC26861FE8006448E6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C71DA26861E40006448E6 /* main.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C39EA0026E3AC0200CA17A7 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1C39EA0226E3D3CF00CA17A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1C9C71A926861B81006448E6 /* NewCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9C71AC26861B81006448E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C9C71B026861B82006448E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,12 +139,14 @@
 		1C9C71E6268620FB006448E6 /* FinderSyncExtension */ = {
 			isa = PBXGroup;
 			children = (
+				1C39EA0226E3D3CF00CA17A7 /* Extensions.swift */,
 				1C9C71E7268620FB006448E6 /* FinderSync.swift */,
 				1C9C71FA26862686006448E6 /* AccessoryView.swift */,
 				1C9C71FE2686298A006448E6 /* AccessoryView.xib */,
 				1C9C71E9268620FB006448E6 /* Info.plist */,
 				1C9C71EA268620FB006448E6 /* FinderSyncExtension.entitlements */,
 				1C9C71F6268622CD006448E6 /* Localizable.strings */,
+				1C39EA0026E3AC0200CA17A7 /* Media.xcassets */,
 			);
 			path = FinderSyncExtension;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9C71F4268622CD006448E6 /* Localizable.strings in Resources */,
+				1C39EA0126E3AC0200CA17A7 /* Media.xcassets in Resources */,
 				1C9C71FC2686298A006448E6 /* AccessoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9C71E8268620FB006448E6 /* FinderSync.swift in Sources */,
+				1C39EA0326E3D3CF00CA17A7 /* Extensions.swift in Sources */,
 				1C9C71FB26862686006448E6 /* AccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +467,7 @@
 				CODE_SIGN_ENTITLEMENTS = NewCanvas/NewCanvas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = NewCanvas/Info.plist;
@@ -468,6 +476,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -483,7 +492,7 @@
 				CODE_SIGN_ENTITLEMENTS = NewCanvas/NewCanvas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = NewCanvas/Info.plist;
@@ -492,6 +501,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -504,7 +514,7 @@
 				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
@@ -514,6 +524,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas.FinderSyncExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -527,7 +538,7 @@
 				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
@@ -537,6 +548,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas.FinderSyncExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

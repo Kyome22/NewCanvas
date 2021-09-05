@@ -10,3 +10,4 @@
 "newCanvas" = "新規キャンバス";
 "createCanvas" = "空のキャンバスを作成";
 "saveOpen" = "保存して開く";
+"performTasks" = "選択した項目に対して処理を実行します";

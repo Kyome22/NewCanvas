@@ -13,12 +13,25 @@ class FinderSync: FIFinderSync {
     override init() {
         super.init()
         
-        let url = URL(fileURLWithPath: "/")
-        FIFinderSyncController.default().directoryURLs = [url]
+        if let homeDirURL = FileManager.homeDirectoryURL {
+            FIFinderSyncController.default().directoryURLs = [homeDirURL]
+        }
+    }
+    
+    override var toolbarItemName: String {
+        return "NewCanvas"
+    }
+    
+    override var toolbarItemToolTip: String {
+        return "performTasks".localized
+    }
+    
+    override var toolbarItemImage: NSImage {
+        return NSImage(named: "toolbarIcon")!
     }
   
-    override func menu(for menu: FIMenuKind) -> NSMenu? {
-        guard menu == .contextualMenuForContainer else { return nil }
+    override func menu(for menuKind: FIMenuKind) -> NSMenu? {
+        guard menuKind == .contextualMenuForContainer || menuKind == .toolbarItemMenu else { return nil }
         let menuItem = NSMenuItem(title: "openNewCanvas".localized,
                                   action: #selector(FinderSync.newCanvas(_:)),
                                   keyEquivalent: "")
@@ -57,7 +70,7 @@ class FinderSync: FIFinderSync {
                         try data.write(to: url)
                         NSWorkspace.shared.openFile(url.path, withApplication: "Preview")
                     } catch {
-                        Swift.print(error.localizedDescription)
+                        NSLog("🐤 \(error.localizedDescription)")
                     }
                 }
             }
@@ -88,10 +101,4 @@ class FinderSync: FIFinderSync {
         return data
     }
 
-}
-
-extension String {
-    var localized: String {
-        return NSLocalizedString(self, comment: self)
-    }
 }
