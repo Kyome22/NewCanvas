@@ -6,10 +6,10 @@ Helper app for Preview to create an empty canvas.
 
 <!-- # Badges -->
 
-[![Github issues](https://img.shields.io/github/issues/Kyome22/PreviewHelper)](https://github.com/Kyome22/NewCanvas/issues)
-[![Github forks](https://img.shields.io/github/forks/Kyome22/PreviewHelper)](https://github.com/Kyome22/NewCanvas/network/members)
-[![Github stars](https://img.shields.io/github/stars/Kyome22/PreviewHelper)](https://github.com/Kyome22/NewCanvas/stargazers)
-[![Github top language](https://img.shields.io/github/languages/top/Kyome22/PreviewHelper)](https://github.com/Kyome22/NewCanvas/)
+[![Github issues](https://img.shields.io/github/issues/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/issues)
+[![Github forks](https://img.shields.io/github/forks/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/network/members)
+[![Github stars](https://img.shields.io/github/stars/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/stargazers)
+[![Github top language](https://img.shields.io/github/languages/top/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/)
 
 # Tags
 
@@ -36,6 +36,7 @@ Helper app for Preview to create an empty canvas.
 
 # Installation
 
+1. [Install NewCanvas via App Store](https://apps.apple.com/us/app/newcanvas/id1574025915?mt=12).
 1. Open System Preferences -> Extensions.
 1. Check the box of "NewCanvas Extension".
 
