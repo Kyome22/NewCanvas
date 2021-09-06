@@ -1,12 +1,12 @@
 
-/* Class = "NSTextFieldCell"; title = "NewCanvas"; ObjectID = "6R7-8W-PY5"; */
-"6R7-8W-PY5.title" = "NewCanvas";
-
-/* Class = "NSTextFieldCell"; title = "©︎ 2021 Takuto Nakamura"; ObjectID = "CFd-MP-aB2"; */
-"CFd-MP-aB2.title" = "©︎ 2021 Takuto Nakamura";
-
 /* Class = "NSViewController"; title = "About"; ObjectID = "bU7-R8-ocO"; */
 "bU7-R8-ocO.title" = "アプリ情報";
 
+/* Class = "NSTextFieldCell"; title = "NewCanvas"; ObjectID = "6R7-8W-PY5"; */
+"6R7-8W-PY5.title" = "NewCanvas";
+
 /* Class = "NSTextFieldCell"; title = "version 1.0"; ObjectID = "c74-d9-XRN"; */
 "c74-d9-XRN.title" = "version 1.0";
+
+/* Class = "NSTextFieldCell"; title = "©︎ 2021 Takuto Nakamura"; ObjectID = "CFd-MP-aB2"; */
+"CFd-MP-aB2.title" = "©︎ 2021 Takuto Nakamura";

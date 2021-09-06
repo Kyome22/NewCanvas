@@ -6,5 +6,5 @@
   
 */
 
-"NotAllowedInformative" = "NewCanvasの拡張機能は許可されていません。";
-"AllowedInformative" = "NewCanvasの拡張機能は許可済みです。";
+"NotAllowedInformative" = "NewCanvasの機能拡張は許可されていません。";
+"AllowedInformative" = "NewCanvasの機能拡張は許可済みです。";

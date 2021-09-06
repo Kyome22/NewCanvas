@@ -35,8 +35,8 @@
             <objects>
                 <tabViewController showSeguePresentationStyle="single" selectedTabViewItemIndex="0" tabStyle="toolbar" id="Pdy-a0-DtW" customClass="PreferencesTabVC" customModule="NewCanvas" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="General" identifier="General" image="general" id="Bzg-rP-XAM"/>
-                        <tabViewItem label="About" identifier="About" image="about" id="z2t-fM-cE3"/>
+                        <tabViewItem label="General" identifier="General" image="General" id="Bzg-rP-XAM"/>
+                        <tabViewItem label="About" identifier="About" image="About" id="z2t-fM-cE3"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="2O4-Cg-KSQ">
@@ -75,7 +75,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about" width="32" height="32"/>
-        <image name="general" width="32" height="32"/>
+        <image name="About" width="32" height="32"/>
+        <image name="General" width="32" height="32"/>
     </resources>
 </document>

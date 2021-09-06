@@ -9,7 +9,7 @@
         <!--General-->
         <scene sceneID="PEd-7d-5j0">
             <objects>
-                <viewController title="General" showSeguePresentationStyle="single" id="bU7-R8-ocO" customClass="GeneralPane" customModule="NewCanvas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="General" showSeguePresentationStyle="single" id="bU7-R8-ocO" customClass="GeneralPaneVC" customModule="NewCanvas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="tOy-S4-hL0">
                         <rect key="frame" x="0.0" y="0.0" width="410" height="140"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,9 +1,9 @@
 
-/* Class = "NSTabViewItem"; label = "General"; ObjectID = "Bzg-rP-XAM"; */
-"Bzg-rP-XAM.label" = "一般";
-
 /* Class = "NSWindow"; title = "General"; ObjectID = "rGf-XK-Se9"; */
 "rGf-XK-Se9.title" = "NewCanvas  〉一般";
+
+/* Class = "NSTabViewItem"; label = "General"; ObjectID = "Bzg-rP-XAM"; */
+"Bzg-rP-XAM.label" = "一般";
 
 /* Class = "NSTabViewItem"; label = "About"; ObjectID = "z2t-fM-cE3"; */
 "z2t-fM-cE3.label" = "アプリ情報";

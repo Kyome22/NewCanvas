@@ -23,10 +23,10 @@ class PreferencesTabVC: NSTabViewController {
         var originalSize = CGSize.zero
         var title = ""
         switch selectedVC {
-        case let generalPane as GeneralPane:
+        case let generalPane as GeneralPaneVC:
             originalSize = generalPane.originalSize
             title = generalPane.title!
-        case let aboutPane as AboutPane:
+        case let aboutPane as AboutPaneVC:
             originalSize = aboutPane.originalSize
             title = aboutPane.title!
         default:

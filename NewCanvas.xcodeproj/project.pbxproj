@@ -19,8 +19,8 @@
 		1C9C71FB26862686006448E6 /* AccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C71FA26862686006448E6 /* AccessoryView.swift */; };
 		1C9C71FC2686298A006448E6 /* AccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C71FE2686298A006448E6 /* AccessoryView.xib */; };
 		1C9C720226870C6A006448E6 /* PreferencesTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C720126870C6A006448E6 /* PreferencesTabVC.swift */; };
-		1C9C720A268710C9006448E6 /* GeneralPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C7209268710C9006448E6 /* GeneralPane.swift */; };
-		1C9C720C268710D7006448E6 /* AboutPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C720B268710D7006448E6 /* AboutPane.swift */; };
+		1C9C720A268710C9006448E6 /* GeneralPaneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C7209268710C9006448E6 /* GeneralPaneVC.swift */; };
+		1C9C720C268710D7006448E6 /* AboutPaneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C720B268710D7006448E6 /* AboutPaneVC.swift */; };
 		1C9C721126871A39006448E6 /* GeneralPane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C721326871A39006448E6 /* GeneralPane.storyboard */; };
 		1C9C721726871BA1006448E6 /* AboutPane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C721926871BA1006448E6 /* AboutPane.storyboard */; };
 		1C9C721C26871BC1006448E6 /* PreferencesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C721E26871BC1006448E6 /* PreferencesTab.storyboard */; };
@@ -71,8 +71,8 @@
 		1C9C71FD2686298A006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AccessoryView.xib; sourceTree = "<group>"; };
 		1C9C72002686298E006448E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AccessoryView.strings; sourceTree = "<group>"; };
 		1C9C720126870C6A006448E6 /* PreferencesTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTabVC.swift; sourceTree = "<group>"; };
-		1C9C7209268710C9006448E6 /* GeneralPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPane.swift; sourceTree = "<group>"; };
-		1C9C720B268710D7006448E6 /* AboutPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPane.swift; sourceTree = "<group>"; };
+		1C9C7209268710C9006448E6 /* GeneralPaneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPaneVC.swift; sourceTree = "<group>"; };
+		1C9C720B268710D7006448E6 /* AboutPaneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPaneVC.swift; sourceTree = "<group>"; };
 		1C9C721226871A39006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GeneralPane.storyboard; sourceTree = "<group>"; };
 		1C9C721626871A57006448E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/GeneralPane.storyboard; sourceTree = "<group>"; };
 		1C9C721826871BA1006448E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AboutPane.storyboard; sourceTree = "<group>"; };
@@ -125,13 +125,13 @@
 				1C9C721E26871BC1006448E6 /* PreferencesTab.storyboard */,
 				1C9C720126870C6A006448E6 /* PreferencesTabVC.swift */,
 				1C9C721326871A39006448E6 /* GeneralPane.storyboard */,
-				1C9C7209268710C9006448E6 /* GeneralPane.swift */,
+				1C9C7209268710C9006448E6 /* GeneralPaneVC.swift */,
 				1C9C721926871BA1006448E6 /* AboutPane.storyboard */,
-				1C9C720B268710D7006448E6 /* AboutPane.swift */,
+				1C9C720B268710D7006448E6 /* AboutPaneVC.swift */,
+				1C9C71DF2686204C006448E6 /* Localizable.strings */,
 				1C9C71B026861B82006448E6 /* Assets.xcassets */,
 				1C9C71B526861B82006448E6 /* Info.plist */,
 				1C9C71B626861B82006448E6 /* NewCanvas.entitlements */,
-				1C9C71DF2686204C006448E6 /* Localizable.strings */,
 			);
 			path = NewCanvas;
 			sourceTree = "<group>";
@@ -141,12 +141,12 @@
 			children = (
 				1C39EA0226E3D3CF00CA17A7 /* Extensions.swift */,
 				1C9C71E7268620FB006448E6 /* FinderSync.swift */,
-				1C9C71FA26862686006448E6 /* AccessoryView.swift */,
 				1C9C71FE2686298A006448E6 /* AccessoryView.xib */,
-				1C9C71E9268620FB006448E6 /* Info.plist */,
-				1C9C71EA268620FB006448E6 /* FinderSyncExtension.entitlements */,
+				1C9C71FA26862686006448E6 /* AccessoryView.swift */,
 				1C9C71F6268622CD006448E6 /* Localizable.strings */,
 				1C39EA0026E3AC0200CA17A7 /* Media.xcassets */,
+				1C9C71E9268620FB006448E6 /* Info.plist */,
+				1C9C71EA268620FB006448E6 /* FinderSyncExtension.entitlements */,
 			);
 			path = FinderSyncExtension;
 			sourceTree = "<group>";
@@ -257,10 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9C720C268710D7006448E6 /* AboutPane.swift in Sources */,
+				1C9C720C268710D7006448E6 /* AboutPaneVC.swift in Sources */,
 				1C9C71DC26861FE8006448E6 /* main.swift in Sources */,
 				1C9C71AD26861B81006448E6 /* AppDelegate.swift in Sources */,
-				1C9C720A268710C9006448E6 /* GeneralPane.swift in Sources */,
+				1C9C720A268710C9006448E6 /* GeneralPaneVC.swift in Sources */,
 				1C9C720226870C6A006448E6 /* PreferencesTabVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

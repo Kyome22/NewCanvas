@@ -1,5 +1,5 @@
 //
-//  GeneralPane.swift
+//  GeneralPaneVC.swift
 //  NewCanvas
 //
 //  Created by Takuto Nakamura on 2021/06/26.
@@ -8,7 +8,7 @@
 import Cocoa
 import FinderSync
 
-class GeneralPane: NSViewController {
+class GeneralPaneVC: NSViewController {
 
     @IBOutlet weak var statusLabel: NSTextField!
     
@@ -16,13 +16,14 @@ class GeneralPane: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         originalSize = self.view.frame.size
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(updateStatus),
-                                               name: NSApplication.didBecomeActiveNotification,
-                                               object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(updateStatus),
+            name: NSApplication.didBecomeActiveNotification,
+            object: nil
+        )
     }
     
     @objc func updateStatus() {

@@ -1,5 +1,5 @@
 //
-//  AboutPane.swift
+//  AboutPaneVC.swift
 //  NewCanvas
 //
 //  Created by Takuto Nakamura on 2021/06/26.
@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class AboutPane: NSViewController {
+class AboutPaneVC: NSViewController {
 
     @IBOutlet weak var versionLabel: NSTextField!
     @IBOutlet weak var copyrightLabel: NSTextField!

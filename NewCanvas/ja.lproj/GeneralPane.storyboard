@@ -9,7 +9,7 @@
         <!--一般-->
         <scene sceneID="PEd-7d-5j0">
             <objects>
-                <viewController title="一般" showSeguePresentationStyle="single" id="bU7-R8-ocO" customClass="GeneralPane" customModule="NewCanvas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="一般" showSeguePresentationStyle="single" id="bU7-R8-ocO" customClass="GeneralPaneVC" customModule="NewCanvas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="tOy-S4-hL0">
                         <rect key="frame" x="0.0" y="0.0" width="410" height="140"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -21,8 +21,8 @@
                                         <rect key="frame" x="25" y="68" width="321" height="32"/>
                                         <textFieldCell key="cell" selectable="YES" alignment="center" id="oms-fY-MwK">
                                             <font key="font" metaFont="system"/>
-                                            <string key="title">NewCanvasの拡張機能には許可が必要です。
-システム環境設定にて拡張機能に許可を与えてください。</string>
+                                            <string key="title">NewCanvasの機能拡張には許可が必要です。
+システム環境設定にて機能拡張に許可を与えてください。</string>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -39,7 +39,7 @@
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RaF-9W-D01">
                                         <rect key="frame" x="51" y="0.0" width="268" height="16"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="NewCanvasの拡張機能は許可されていません。" id="c03-E7-wqt">
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="NewCanvasの機能拡張は許可されていません。" id="c03-E7-wqt">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
