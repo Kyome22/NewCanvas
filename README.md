@@ -10,6 +10,7 @@ Helper app for Preview to create an empty canvas.
 [![Github forks](https://img.shields.io/github/forks/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/network/members)
 [![Github stars](https://img.shields.io/github/stars/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/stargazers)
 [![Github top language](https://img.shields.io/github/languages/top/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/)
+[![Github license](https://img.shields.io/github/license/Kyome22/NewCanvas)](https://github.com/Kyome22/NewCanvas/)
 
 # Tags
 
