@@ -2,9 +2,15 @@
   Localizable.strings
   NewCanvas
 
-  Created by Takuto Nakamura on 2021/06/25.
+  Created by Takuto Nakamura on 2022/06/25.
   
 */
 
-"NotAllowedInformative" = "NewCanvas extension is not been allowed.";
-"AllowedInformative" = "NewCanvas extension has already been allowed.";
+"general" = "General";
+"extensionNotAllowed" = "NewCanvas extension is not been allowed.";
+"extensionAllowed" = "NewCanvas extension has already been allowed.";
+"requiresPermission" = "NewCanvas extension requires permission.";
+"givePermission" = "Please give permission of Finder Extensions in the system preferences.";
+"openPreferences" = "Open System Preferences";
+"about" = "About";
+"version" = "Version SHORT_VERSION";

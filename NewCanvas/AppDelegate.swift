@@ -2,49 +2,28 @@
 //  AppDelegate.swift
 //  NewCanvas
 //
-//  Created by Takuto Nakamura on 2021/06/25.
+//  Created by Takuto Nakamura on 2022/06/25.
 //
 
-import Cocoa
-import FinderSync
+import AppKit
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    var mainWC: NSWindowController?
-    
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        NSApp.setActivationPolicy(.accessory)
         openPreferences()
     }
-    
+
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
-    
+
     func openPreferences() {
-        if mainWC == nil {
-            let sb = NSStoryboard(name: "PreferencesTab", bundle: nil)
-            mainWC = (sb.instantiateInitialController() as! NSWindowController)
-            mainWC!.window?.delegate = self
+        NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
+        NSApp.windows.forEach { window in
+            if window.canBecomeMain {
+                window.orderFrontRegardless()
+                NSApp.activate(ignoringOtherApps: true)
+            }
         }
-        NSApp.activate(ignoringOtherApps: true)
-        mainWC?.showWindow(nil)
-    }
-
-}
-
-extension AppDelegate: NSWindowDelegate {
-    
-    func windowWillClose(_ notification: Notification) {
-        guard let window = notification.object as? NSWindow else { return }
-        if window === mainWC?.window {
-            mainWC = nil
-        }
-    }
-    
-}
-
-extension String {
-    var localized: String {
-        return NSLocalizedString(self, comment: self)
     }
 }

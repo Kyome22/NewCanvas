@@ -2,9 +2,15 @@
   Localizable.strings
   NewCanvas
 
-  Created by Takuto Nakamura on 2021/06/25.
+  Created by Takuto Nakamura on 2022/06/25.
   
 */
 
-"NotAllowedInformative" = "NewCanvasの機能拡張は許可されていません。";
-"AllowedInformative" = "NewCanvasの機能拡張は許可済みです。";
+"general" = "General";
+"extensionNotAllowed" = "NewCanvasの機能拡張は許可されていません。";
+"extensionAllowed" = "NewCanvasの機能拡張は許可済みです。";
+"requiresPermission" = "NewCanvasの機能拡張には許可が必要です。";
+"givePermission" = "システム環境設定にてFinder機能拡張の許可を与えてください。";
+"openPreferences" = "システム環境設定を開く";
+"about" = "アプリ情報";
+"version" = "バージョン SHORT_VERSION";
