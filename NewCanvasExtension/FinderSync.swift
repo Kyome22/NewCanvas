@@ -70,34 +70,47 @@ final class FinderSync: FIFinderSync {
             hostingView.setFrameSize(NSSize(width: 200, height: 150))
             panel.accessoryView = hostingView
             if panel.runModal() == .OK, let url = panel.url {
-                self.createCanvas(url: url, attributes: accessoryViewModel.attributes)
+                if let data = self.createCanvas(attributes: accessoryViewModel.attributes) {
+                    self.saveAndOpenCanvas(url: url, data: data)
+                }
             }
         }
     }
 
-    private func createCanvas(url: URL, attributes: CanvasAttributes) {
-        let image = NSImage(size: attributes.size)
-        image.lockFocus()
-        let rect = NSRect(origin: .zero, size: attributes.size)
-        attributes.fillColor.drawSwatch(in: rect)
-        image.unlockFocus()
-        guard let rep = image.tiffRepresentation,
-              let bitmap = NSBitmapImageRep(data: rep),
-              let data = bitmap.representation(using: attributes.fileFormat, properties: [:])
+    private func createCanvas(attributes: CanvasAttributes) -> Data? {
+        guard let cgContext = CGContext(data: nil,
+                                        width: Int(attributes.size.width),
+                                        height: Int(attributes.size.height),
+                                        bitsPerComponent: 8,
+                                        bytesPerRow: 4 * Int(attributes.size.width),
+                                        space: CGColorSpaceCreateDeviceRGB(),
+                                        bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)
         else {
-            return
+            return nil
         }
+        cgContext.interpolationQuality = .high
+        cgContext.setFillColor(attributes.fillColor)
+        cgContext.fill(CGRect(origin: .zero, size: attributes.size))
+        guard let cgImage = cgContext.makeImage() else {
+            return nil
+        }
+        let bitmap = NSBitmapImageRep(cgImage: cgImage)
+        return bitmap.representation(using: attributes.fileFormat, properties: [:])
+    }
+
+    private func saveAndOpenCanvas(url: URL, data: Data) {
         do {
             try data.write(to: url)
-            let workspace = NSWorkspace.shared
-            if let appURL = workspace.urlForApplication(withBundleIdentifier: "com.apple.Preview") {
-                let config = NSWorkspace.OpenConfiguration()
-                workspace.open([url], withApplicationAt: appURL, configuration: config)
-            }
         } catch {
             #if DEBUG
             NSLog("🐤 %@", error.localizedDescription)
             #endif
+        }
+        // Open Preview
+        let workspace = NSWorkspace.shared
+        if let appURL = workspace.urlForApplication(withBundleIdentifier: "com.apple.Preview") {
+            let config = NSWorkspace.OpenConfiguration()
+            workspace.open([url], withApplicationAt: appURL, configuration: config)
         }
     }
 }

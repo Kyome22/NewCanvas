@@ -32,8 +32,8 @@ final class AccessoryViewModel: ObservableObject {
 
     var attributes: CanvasAttributes {
         return CanvasAttributes(
-            size: NSSize(width: width, height: height),
-            fillColor: NSColor(cgColor: fillColor) ?? .white,
+            size: CGSize(width: width, height: height),
+            fillColor: fillColor,
             fileFormat: format
         )
     }

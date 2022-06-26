@@ -10,7 +10,7 @@ import Cocoa
 typealias FileFormat = NSBitmapImageRep.FileType
 
 struct CanvasAttributes {
-    let size: NSSize
-    let fillColor: NSColor
+    let size: CGSize
+    let fillColor: CGColor
     let fileFormat: FileFormat
 }
