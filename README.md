@@ -14,18 +14,18 @@ Helper app for Preview to create an empty canvas.
 
 # Tags
 
-`macOS` `Finder Sync Extension` `Preview` `Swift`
+`macOS` `Finder Sync Extension` `Preview` `Swift` `SwiftUI`
 
 # Demo
 
-![Demo](resources/file0.png)
+<img src="resources/file0.png" height="410px" alt="Overview">
 
 1. Open the context menu by right-clicking on the background of Desktop or Finder.
-1. Select "Open a new canvas".
+1. Select "Open New Canvas".
 1. Fill in the filename and the values of the canvas size and so on.
 1. A new empty canvas will be opened automatically with Preview.app.
 
-![Demo](resources/file1.png)
+<img src="resources/file1.png" height="479px" alt="Preview">
 
 **You can edit and draw objects on the canvas without any original resource!!**
 
@@ -41,7 +41,7 @@ Helper app for Preview to create an empty canvas.
 1. Open System Preferences -> Extensions.
 1. Check the box of "NewCanvas Extension".
 
-![Demo](resources/file2.png)
+<img src="resources/file2.png" height="1222px" alt="Preferences">
 
 # Contributors
 
