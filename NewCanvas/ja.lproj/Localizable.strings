@@ -6,11 +6,11 @@
   
 */
 
-"general" = "General";
+"general" = "一般";
 "extensionNotAllowed" = "NewCanvasの機能拡張は許可されていません。";
 "extensionAllowed" = "NewCanvasの機能拡張は許可済みです。";
 "requiresPermission" = "NewCanvasの機能拡張には許可が必要です。";
-"givePermission" = "システム環境設定にてFinder機能拡張の許可を与えてください。";
-"openPreferences" = "システム環境設定を開く";
+"givePermission" = "システム設定にてFinder機能拡張の許可を与えてください。";
+"openSettings" = "システム設定を開く";
 "about" = "アプリ情報";
 "version" = "バージョン SHORT_VERSION";

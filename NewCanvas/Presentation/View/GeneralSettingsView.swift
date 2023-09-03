@@ -16,9 +16,9 @@ struct GeneralSettingsView: View {
                 .font(.title2)
             Text("givePermission")
             Button {
-                viewModel.openSystemPreferences()
+                viewModel.openSystemSettings()
             } label: {
-                Text("openPreferences")
+                Text("openSettings")
                     .frame(width: 280)
             }
             Label(viewModel.extensionState.label,

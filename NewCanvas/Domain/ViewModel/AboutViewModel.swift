@@ -13,8 +13,7 @@ final class AboutViewModel: ObservableObject {
 
     init() {
         let bundleShortVersion = "CFBundleShortVersionString".bundleString!
-        version = "version".localized
-            .replacingOccurrences(of: "SHORT_VERSION", with: bundleShortVersion)
+        version = "version".localized.replacingOccurrences(of: "SHORT_VERSION", with: bundleShortVersion)
         copyright = "NSHumanReadableCopyright".bundleString!
     }
 }

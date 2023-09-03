@@ -10,7 +10,7 @@
 "extensionNotAllowed" = "NewCanvas extension is not been allowed.";
 "extensionAllowed" = "NewCanvas extension has already been allowed.";
 "requiresPermission" = "NewCanvas extension requires permission.";
-"givePermission" = "Please give permission of Finder Extensions in the system preferences.";
-"openPreferences" = "Open System Preferences";
+"givePermission" = "Please give permission of Finder Extensions in the system settings.";
+"openSettings" = "Open System Settings";
 "about" = "About";
 "version" = "Version SHORT_VERSION";

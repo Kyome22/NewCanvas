@@ -10,25 +10,6 @@ import Combine
 import FinderSync
 
 final class GeneralSettingsViewModel: ObservableObject {
-    enum ExtensionState {
-        case notAllowed
-        case allowed
-
-        var label: LocalizedStringKey {
-            switch self {
-            case .notAllowed: return "extensionNotAllowed"
-            case .allowed:    return "extensionAllowed"
-            }
-        }
-
-        var systemImage: String {
-            switch self {
-            case .notAllowed: return "exclamationmark.triangle"
-            case .allowed:    return "checkmark"
-            }
-        }
-    }
-
     @Published var extensionState: ExtensionState = .notAllowed
     private var cancellables = Set<AnyCancellable>()
 
@@ -49,7 +30,7 @@ final class GeneralSettingsViewModel: ObservableObject {
         }
     }
 
-    func openSystemPreferences() {
+    func openSystemSettings() {
         FIFinderSyncController.showExtensionManagementInterface()
     }
 }

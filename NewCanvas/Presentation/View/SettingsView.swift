@@ -8,23 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
-    private enum Tabs: Hashable {
-        case general
-        case about
-    }
-
     var body: some View {
         TabView {
             GeneralSettingsView()
                 .tabItem {
                     Label("general", systemImage: "gear")
                 }
-                .tag(Tabs.general)
             AboutView()
                 .tabItem {
                     Label("about", systemImage: "info.circle")
                 }
-                .tag(Tabs.about)
         }
         .padding(.horizontal, 40)
         .padding(.vertical, 20)

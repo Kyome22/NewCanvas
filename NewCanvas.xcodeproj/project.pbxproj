@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183EE5402AA44AE70001589A /* ExtensionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EE53F2AA44AE70001589A /* ExtensionState.swift */; };
 		1C54E2D028674E8F0058B55E /* NewCanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */; };
 		1C54E2D228674E8F0058B55E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2D128674E8F0058B55E /* SettingsView.swift */; };
 		1C54E2D428674E8F0058B55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E2D328674E8F0058B55E /* Assets.xcassets */; };
@@ -19,7 +20,7 @@
 		1C54E2EC286751390058B55E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2EB286751390058B55E /* String+Extensions.swift */; };
 		1C54E2F0286758020058B55E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E2F2286758020058B55E /* Localizable.strings */; };
 		1C54E2FB286759690058B55E /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2FA286759690058B55E /* FinderSync.swift */; };
-		1C54E300286759690058B55E /* NewCanvasExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C54E2F8286759690058B55E /* NewCanvasExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C54E300286759690058B55E /* NewCanvasExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1C54E2F8286759690058B55E /* NewCanvasExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1C54E30628675A200058B55E /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E30528675A200058B55E /* FileManager+Extension.swift */; };
 		1C54E30728675A300058B55E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2EB286751390058B55E /* String+Extensions.swift */; };
 		1C54E30928675A550058B55E /* AccessoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E30828675A550058B55E /* AccessoryViewModel.swift */; };
@@ -40,20 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1C54E304286759690058B55E /* Embed App Extensions */ = {
+		1C54E304286759690058B55E /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				1C54E300286759690058B55E /* NewCanvasExtension.appex in Embed App Extensions */,
+				1C54E300286759690058B55E /* NewCanvasExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		183EE53F2AA44AE70001589A /* ExtensionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionState.swift; sourceTree = "<group>"; };
 		1C54E2CC28674E8F0058B55E /* NewCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCanvasApp.swift; sourceTree = "<group>"; };
 		1C54E2D128674E8F0058B55E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183EE5392AA441250001589A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				183EE53E2AA44ADA0001589A /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		183EE53A2AA4412C0001589A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1C54E2E428674FE00058B55E /* AppDelegate.swift */,
+				1C54E2EE2867514F0058B55E /* ViewModel */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		183EE53B2AA441340001589A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1C54E2EB286751390058B55E /* String+Extensions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		183EE53C2AA4413B0001589A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */,
+				183EE53D2AA441750001589A /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		183EE53D2AA441750001589A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C54E2D128674E8F0058B55E /* SettingsView.swift */,
+				1C54E2DE28674F0D0058B55E /* GeneralSettingsView.swift */,
+				1C54E2E028674F160058B55E /* AboutView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		183EE53E2AA44ADA0001589A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				183EE53F2AA44AE70001589A /* ExtensionState.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		1C54E2C328674E8F0058B55E = {
 			isa = PBXGroup;
 			children = (
@@ -122,14 +176,13 @@
 			isa = PBXGroup;
 			children = (
 				1C54E2E6286750900058B55E /* Info.plist */,
-				1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */,
-				1C54E2E428674FE00058B55E /* AppDelegate.swift */,
-				1C54E2ED286751480058B55E /* Extensions */,
-				1C54E2EE2867514F0058B55E /* ViewModel */,
-				1C54E2EF286751570058B55E /* View */,
-				1C54E2D328674E8F0058B55E /* Assets.xcassets */,
 				1C54E2D828674E8F0058B55E /* NewCanvas.entitlements */,
+				1C54E2D328674E8F0058B55E /* Assets.xcassets */,
 				1C54E2F2286758020058B55E /* Localizable.strings */,
+				183EE5392AA441250001589A /* Data */,
+				183EE53A2AA4412C0001589A /* Domain */,
+				183EE53C2AA4413B0001589A /* Presentation */,
+				183EE53B2AA441340001589A /* Helper */,
 				1C54E2D528674E8F0058B55E /* Preview Content */,
 			);
 			path = NewCanvas;
@@ -143,14 +196,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1C54E2ED286751480058B55E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2EB286751390058B55E /* String+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		1C54E2EE2867514F0058B55E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,28 +205,18 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		1C54E2EF286751570058B55E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2D128674E8F0058B55E /* SettingsView.swift */,
-				1C54E2DE28674F0D0058B55E /* GeneralSettingsView.swift */,
-				1C54E2E028674F160058B55E /* AboutView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		1C54E2F9286759690058B55E /* NewCanvasExtension */ = {
 			isa = PBXGroup;
 			children = (
 				1C54E2FC286759690058B55E /* Info.plist */,
+				1C54E2FD286759690058B55E /* NewCanvasExtension.entitlements */,
+				1C54E30C28675B730058B55E /* Media.xcassets */,
+				1C54E31428676CD40058B55E /* Localizable.strings */,
 				1C54E30528675A200058B55E /* FileManager+Extension.swift */,
 				1C54E2FA286759690058B55E /* FinderSync.swift */,
 				1C54E30E286761120058B55E /* CanvasAttributes.swift */,
 				1C54E30828675A550058B55E /* AccessoryViewModel.swift */,
 				1C54E30A28675A630058B55E /* AccessoryView.swift */,
-				1C54E30C28675B730058B55E /* Media.xcassets */,
-				1C54E2FD286759690058B55E /* NewCanvasExtension.entitlements */,
-				1C54E31428676CD40058B55E /* Localizable.strings */,
 			);
 			path = NewCanvasExtension;
 			sourceTree = "<group>";
@@ -196,7 +231,7 @@
 				1C54E2C828674E8F0058B55E /* Sources */,
 				1C54E2C928674E8F0058B55E /* Frameworks */,
 				1C54E2CA28674E8F0058B55E /* Resources */,
-				1C54E304286759690058B55E /* Embed App Extensions */,
+				1C54E304286759690058B55E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -233,7 +268,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					1C54E2CB28674E8F0058B55E = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -290,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183EE5402AA44AE70001589A /* ExtensionState.swift in Sources */,
 				1C54E2E128674F160058B55E /* AboutView.swift in Sources */,
 				1C54E2D228674E8F0058B55E /* SettingsView.swift in Sources */,
 				1C54E2EA286751220058B55E /* GeneralSettingsViewModel.swift in Sources */,
@@ -350,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -379,6 +416,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -396,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -410,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -439,6 +478,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -450,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -469,6 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NewCanvas/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -499,6 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NewCanvas/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -526,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -554,6 +597,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
