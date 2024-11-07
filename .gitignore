@@ -1,9 +1,16 @@
-# macOS
+# Mac
 .DS_Store
 
 # Xcode
-build/
-DerivedData/
 xcuserdata/
 *.xcuserstate
+*.xccheckout
 
+# Swift Package Manager
+Packages.resolved
+.swiftpm/
+.build/
+NewCanvasPackages/Package.resolved
+
+# Test
+TestResults/
