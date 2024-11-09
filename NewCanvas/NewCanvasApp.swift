@@ -7,7 +7,6 @@
 
 import Domain
 import Presentation
-import SavePanelSceneKit
 import SwiftUI
 
 @main

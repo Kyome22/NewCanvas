@@ -50,7 +50,7 @@ struct WorkspaceView: View {
                 viewModel.isPresentedFileExporter = true
             } label: {
                 Text("newCanvas", bundle: .module)
-                    .frame(maxWidth: .infinity)
+                    .frame(width: 150)
             }
             .controlSize(.large)
             .keyboardShortcut(.defaultAction)

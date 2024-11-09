@@ -7,7 +7,6 @@
 */
 
 import AppKit
-import SavePanelSceneKit
 
 public final class AppDelegate: NSObject, NSApplicationDelegate {
     public let appDependency = AppDependency()
