@@ -29,7 +29,6 @@ import Combine
               let directoryURL = urls.first else {
             return
         }
-        NSLog("🦩 url \(directoryURL.relativePath)")
         openSelfIfneeded()
         urlSubject.send(directoryURL)
     }
