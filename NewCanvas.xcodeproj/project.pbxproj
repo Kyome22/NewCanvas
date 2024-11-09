@@ -3,42 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183EE5402AA44AE70001589A /* ExtensionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EE53F2AA44AE70001589A /* ExtensionState.swift */; };
 		1C54E2D028674E8F0058B55E /* NewCanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */; };
-		1C54E2D228674E8F0058B55E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2D128674E8F0058B55E /* SettingsView.swift */; };
 		1C54E2D428674E8F0058B55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E2D328674E8F0058B55E /* Assets.xcassets */; };
 		1C54E2D728674E8F0058B55E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E2D628674E8F0058B55E /* Preview Assets.xcassets */; };
-		1C54E2DF28674F0D0058B55E /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2DE28674F0D0058B55E /* GeneralSettingsView.swift */; };
-		1C54E2E128674F160058B55E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2E028674F160058B55E /* AboutView.swift */; };
-		1C54E2E528674FE00058B55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2E428674FE00058B55E /* AppDelegate.swift */; };
-		1C54E2E8286751140058B55E /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2E7286751140058B55E /* AboutViewModel.swift */; };
-		1C54E2EA286751220058B55E /* GeneralSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2E9286751220058B55E /* GeneralSettingsViewModel.swift */; };
-		1C54E2EC286751390058B55E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2EB286751390058B55E /* String+Extensions.swift */; };
-		1C54E2F0286758020058B55E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E2F2286758020058B55E /* Localizable.strings */; };
-		1C54E2FB286759690058B55E /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2FA286759690058B55E /* FinderSync.swift */; };
-		1C54E300286759690058B55E /* NewCanvasExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1C54E2F8286759690058B55E /* NewCanvasExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1C54E30628675A200058B55E /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E30528675A200058B55E /* FileManager+Extension.swift */; };
-		1C54E30728675A300058B55E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E2EB286751390058B55E /* String+Extensions.swift */; };
-		1C54E30928675A550058B55E /* AccessoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E30828675A550058B55E /* AccessoryViewModel.swift */; };
-		1C54E30B28675A630058B55E /* AccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E30A28675A630058B55E /* AccessoryView.swift */; };
-		1C54E30D28675B730058B55E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E30C28675B730058B55E /* Media.xcassets */; };
-		1C54E30F286761120058B55E /* CanvasAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54E30E286761120058B55E /* CanvasAttributes.swift */; };
-		1C54E31228676CD40058B55E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C54E31428676CD40058B55E /* Localizable.strings */; };
+		1C90D5CD2CDD031D00C1DD2A /* ServicesMenu.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1C90D5CC2CDD031D00C1DD2A /* ServicesMenu.xcstrings */; };
+		1C90D5D02CDD062400C1DD2A /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 1C90D5CF2CDD062400C1DD2A /* Presentation */; };
+		1C90D5D22CDE2DF600C1DD2A /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 1C90D5D12CDE2DF600C1DD2A /* Domain */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1C54E2FE286759690058B55E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1C54E2C428674E8F0058B55E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C54E2F7286759690058B55E;
-			remoteInfo = NewCanvasExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1C54E304286759690058B55E /* Embed Foundation Extensions */ = {
@@ -47,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				1C54E300286759690058B55E /* NewCanvasExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,33 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		183EE53F2AA44AE70001589A /* ExtensionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionState.swift; sourceTree = "<group>"; };
 		1C54E2CC28674E8F0058B55E /* NewCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCanvasApp.swift; sourceTree = "<group>"; };
-		1C54E2D128674E8F0058B55E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1C54E2D328674E8F0058B55E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C54E2D628674E8F0058B55E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C54E2D828674E8F0058B55E /* NewCanvas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewCanvas.entitlements; sourceTree = "<group>"; };
-		1C54E2DE28674F0D0058B55E /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
-		1C54E2E028674F160058B55E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		1C54E2E428674FE00058B55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C54E2E6286750900058B55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1C54E2E7286751140058B55E /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
-		1C54E2E9286751220058B55E /* GeneralSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewModel.swift; sourceTree = "<group>"; };
-		1C54E2EB286751390058B55E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		1C54E2F1286758020058B55E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1C54E2F3286758030058B55E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1C54E2F8286759690058B55E /* NewCanvasExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewCanvasExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C54E2FA286759690058B55E /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
-		1C54E2FC286759690058B55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C54E2FD286759690058B55E /* NewCanvasExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewCanvasExtension.entitlements; sourceTree = "<group>"; };
-		1C54E30528675A200058B55E /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
-		1C54E30828675A550058B55E /* AccessoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViewModel.swift; sourceTree = "<group>"; };
-		1C54E30A28675A630058B55E /* AccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryView.swift; sourceTree = "<group>"; };
-		1C54E30C28675B730058B55E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		1C54E30E286761120058B55E /* CanvasAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasAttributes.swift; sourceTree = "<group>"; };
-		1C54E31328676CD40058B55E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1C54E31528676CD50058B55E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C90D5CB2CDCFF0000C1DD2A /* NewCanvasPackages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NewCanvasPackages; sourceTree = "<group>"; };
+		1C90D5CC2CDD031D00C1DD2A /* ServicesMenu.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ServicesMenu.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,76 +44,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C54E2F5286759690058B55E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1C90D5D22CDE2DF600C1DD2A /* Domain in Frameworks */,
+				1C90D5D02CDD062400C1DD2A /* Presentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		183EE5392AA441250001589A /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				183EE53E2AA44ADA0001589A /* Entity */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		183EE53A2AA4412C0001589A /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2E428674FE00058B55E /* AppDelegate.swift */,
-				1C54E2EE2867514F0058B55E /* ViewModel */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		183EE53B2AA441340001589A /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2EB286751390058B55E /* String+Extensions.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		183EE53C2AA4413B0001589A /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */,
-				183EE53D2AA441750001589A /* View */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		183EE53D2AA441750001589A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2D128674E8F0058B55E /* SettingsView.swift */,
-				1C54E2DE28674F0D0058B55E /* GeneralSettingsView.swift */,
-				1C54E2E028674F160058B55E /* AboutView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		183EE53E2AA44ADA0001589A /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				183EE53F2AA44AE70001589A /* ExtensionState.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
 		1C54E2C328674E8F0058B55E = {
 			isa = PBXGroup;
 			children = (
+				1C90D5CB2CDCFF0000C1DD2A /* NewCanvasPackages */,
 				1C54E2CE28674E8F0058B55E /* NewCanvas */,
-				1C54E2F9286759690058B55E /* NewCanvasExtension */,
+				1C90D5CE2CDD062400C1DD2A /* Frameworks */,
 				1C54E2CD28674E8F0058B55E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				1C54E2CC28674E8F0058B55E /* NewCanvas.app */,
-				1C54E2F8286759690058B55E /* NewCanvasExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,11 +76,8 @@
 				1C54E2E6286750900058B55E /* Info.plist */,
 				1C54E2D828674E8F0058B55E /* NewCanvas.entitlements */,
 				1C54E2D328674E8F0058B55E /* Assets.xcassets */,
-				1C54E2F2286758020058B55E /* Localizable.strings */,
-				183EE5392AA441250001589A /* Data */,
-				183EE53A2AA4412C0001589A /* Domain */,
-				183EE53C2AA4413B0001589A /* Presentation */,
-				183EE53B2AA441340001589A /* Helper */,
+				1C90D5CC2CDD031D00C1DD2A /* ServicesMenu.xcstrings */,
+				1C54E2CF28674E8F0058B55E /* NewCanvasApp.swift */,
 				1C54E2D528674E8F0058B55E /* Preview Content */,
 			);
 			path = NewCanvas;
@@ -196,29 +91,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1C54E2EE2867514F0058B55E /* ViewModel */ = {
+		1C90D5CE2CDD062400C1DD2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C54E2E9286751220058B55E /* GeneralSettingsViewModel.swift */,
-				1C54E2E7286751140058B55E /* AboutViewModel.swift */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1C54E2F9286759690058B55E /* NewCanvasExtension */ = {
-			isa = PBXGroup;
-			children = (
-				1C54E2FC286759690058B55E /* Info.plist */,
-				1C54E2FD286759690058B55E /* NewCanvasExtension.entitlements */,
-				1C54E30C28675B730058B55E /* Media.xcassets */,
-				1C54E31428676CD40058B55E /* Localizable.strings */,
-				1C54E30528675A200058B55E /* FileManager+Extension.swift */,
-				1C54E2FA286759690058B55E /* FinderSync.swift */,
-				1C54E30E286761120058B55E /* CanvasAttributes.swift */,
-				1C54E30828675A550058B55E /* AccessoryViewModel.swift */,
-				1C54E30A28675A630058B55E /* AccessoryView.swift */,
-			);
-			path = NewCanvasExtension;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,29 +113,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				1C54E2FF286759690058B55E /* PBXTargetDependency */,
 			);
 			name = NewCanvas;
 			productName = NewCanvas;
 			productReference = 1C54E2CC28674E8F0058B55E /* NewCanvas.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1C54E2F7286759690058B55E /* NewCanvasExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C54E301286759690058B55E /* Build configuration list for PBXNativeTarget "NewCanvasExtension" */;
-			buildPhases = (
-				1C54E2F4286759690058B55E /* Sources */,
-				1C54E2F5286759690058B55E /* Frameworks */,
-				1C54E2F6286759690058B55E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NewCanvasExtension;
-			productName = NewCanvasExtension;
-			productReference = 1C54E2F8286759690058B55E /* NewCanvasExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -268,18 +127,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					1C54E2CB28674E8F0058B55E = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
-					1C54E2F7286759690058B55E = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
 			buildConfigurationList = 1C54E2C728674E8F0058B55E /* Build configuration list for PBXProject "NewCanvas" */;
-			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -288,12 +143,12 @@
 				ja,
 			);
 			mainGroup = 1C54E2C328674E8F0058B55E;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 1C54E2CD28674E8F0058B55E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1C54E2CB28674E8F0058B55E /* NewCanvas */,
-				1C54E2F7286759690058B55E /* NewCanvasExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -304,17 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C54E2D728674E8F0058B55E /* Preview Assets.xcassets in Resources */,
-				1C54E2F0286758020058B55E /* Localizable.strings in Resources */,
+				1C90D5CD2CDD031D00C1DD2A /* ServicesMenu.xcstrings in Resources */,
 				1C54E2D428674E8F0058B55E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C54E2F6286759690058B55E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C54E30D28675B730058B55E /* Media.xcassets in Resources */,
-				1C54E31228676CD40058B55E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,61 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183EE5402AA44AE70001589A /* ExtensionState.swift in Sources */,
-				1C54E2E128674F160058B55E /* AboutView.swift in Sources */,
-				1C54E2D228674E8F0058B55E /* SettingsView.swift in Sources */,
-				1C54E2EA286751220058B55E /* GeneralSettingsViewModel.swift in Sources */,
-				1C54E2E8286751140058B55E /* AboutViewModel.swift in Sources */,
-				1C54E2EC286751390058B55E /* String+Extensions.swift in Sources */,
 				1C54E2D028674E8F0058B55E /* NewCanvasApp.swift in Sources */,
-				1C54E2E528674FE00058B55E /* AppDelegate.swift in Sources */,
-				1C54E2DF28674F0D0058B55E /* GeneralSettingsView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C54E2F4286759690058B55E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C54E30F286761120058B55E /* CanvasAttributes.swift in Sources */,
-				1C54E2FB286759690058B55E /* FinderSync.swift in Sources */,
-				1C54E30B28675A630058B55E /* AccessoryView.swift in Sources */,
-				1C54E30728675A300058B55E /* String+Extensions.swift in Sources */,
-				1C54E30628675A200058B55E /* FileManager+Extension.swift in Sources */,
-				1C54E30928675A550058B55E /* AccessoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1C54E2FF286759690058B55E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1C54E2F7286759690058B55E /* NewCanvasExtension */;
-			targetProxy = 1C54E2FE286759690058B55E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1C54E2F2286758020058B55E /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C54E2F1286758020058B55E /* en */,
-				1C54E2F3286758030058B55E /* ja */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		1C54E31428676CD40058B55E /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C54E31328676CD40058B55E /* en */,
-				1C54E31528676CD50058B55E /* ja */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1C54E2D928674E8F0058B55E /* Debug */ = {
@@ -420,6 +216,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,12 +231,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -482,6 +280,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -490,11 +289,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -502,13 +302,12 @@
 		1C54E2DC28674E8F0058B55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NewCanvas/NewCanvas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.3.0;
+				CURRENT_PROJECT_VERSION = 2.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NewCanvas/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
@@ -517,29 +316,28 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewCanvas/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2021-2022 Takuto Nakamura";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2021-2024 Takuto Nakamura";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		1C54E2DD28674E8F0058B55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NewCanvas/NewCanvas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.3.0;
+				CURRENT_PROJECT_VERSION = 2.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NewCanvas/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
@@ -548,74 +346,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewCanvas/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2021-2022 Takuto Nakamura";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2021-2024 Takuto Nakamura";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		1C54E302286759690058B55E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = NewCanvasExtension/NewCanvasExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.3.0;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = VJ5N2X84K8;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NewCanvasExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "NewCanvas Extension";
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2021-2022 Takuto Nakamura";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas.NewCanvasExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		1C54E303286759690058B55E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = NewCanvasExtension/NewCanvasExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.3.0;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = VJ5N2X84K8;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NewCanvasExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "NewCanvas Extension";
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2021-2022 Takuto Nakamura";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.NewCanvas.NewCanvasExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -640,16 +380,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C54E301286759690058B55E /* Build configuration list for PBXNativeTarget "NewCanvasExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C54E302286759690058B55E /* Debug */,
-				1C54E303286759690058B55E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C90D5CF2CDD062400C1DD2A /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		1C90D5D12CDE2DF600C1DD2A /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C54E2C428674E8F0058B55E /* Project object */;
 }
