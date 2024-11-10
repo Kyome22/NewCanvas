@@ -27,7 +27,7 @@
 			</array>
 			<key>NSSendTypes</key>
 			<array>
-				<string>public.file-url</string>
+				<string>NSPasteboardTypeURL</string>
 			</array>
 		</dict>
 	</array>

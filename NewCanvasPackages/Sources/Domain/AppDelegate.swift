@@ -17,6 +17,7 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
             appDependency.logService.notice(.launchApp)
         }
         NSApp.servicesProvider = ServicesProvider.shared
+        NSUpdateDynamicServices()
     }
 
     public func applicationWillTerminate(_ notification: Notification) {}
