@@ -6,12 +6,13 @@
  
 */
 
-import CoreGraphics
+import AppKit
 import DataLayer
 import Foundation
 import Observation
 
 @MainActor @Observable public final class WorkspaceViewModel {
+    private let nsWorkspaceClient: NSWorkspaceClient
     private let canvasService: CanvasService
     private let logService: LogService
 
@@ -22,9 +23,11 @@ import Observation
     public var directoryURL: URL
 
     public init(
+        _ nsWorkspaceClient: NSWorkspaceClient,
         _ canvasService: CanvasService,
         _ logService: LogService
     ) {
+        self.nsWorkspaceClient = nsWorkspaceClient
         self.canvasService = canvasService
         self.logService = logService
         directoryURL = canvasService.homeDirectory
@@ -49,7 +52,9 @@ import Observation
         switch result {
         case let .success(url):
             Task {
-                try await canvasService.openCanvas(url: url)
+                if let appURL = nsWorkspaceClient.urlForApplication("com.apple.Preview") {
+                    _ = try await nsWorkspaceClient.open([url], appURL)
+                }
                 closeWindow()
             }
         case let .failure(error):

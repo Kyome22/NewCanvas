@@ -10,7 +10,7 @@ import AppKit
 
 public struct NSWorkspaceClient: DependencyClient {
     public var urlForApplication: @Sendable (String) -> URL?
-    public var open: @Sendable ([URL], URL) async throws -> NSRunningApplication
+    public var open: @Sendable ([URL], URL) async throws -> Void
 
     public static let liveValue = Self(
         urlForApplication: { NSWorkspace.shared.urlForApplication(withBundleIdentifier: $0) },
@@ -19,6 +19,6 @@ public struct NSWorkspaceClient: DependencyClient {
 
     public static let testValue = Self(
         urlForApplication: { _ in nil },
-        open: { _, _ in NSRunningApplication() }
+        open: { _, _ in }
     )
 }

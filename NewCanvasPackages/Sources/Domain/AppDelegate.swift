@@ -9,18 +9,22 @@
 import AppKit
 
 public final class AppDelegate: NSObject, NSApplicationDelegate {
-    public let appDependency = AppDependency()
+    public let appDependencies = AppDependencies()
+    public let appServices: AppServices
+
+    public override init() {
+        appServices = .init(appDependencies: appDependencies)
+        super.init()
+    }
 
     public func applicationDidFinishLaunching(_ notification: Notification) {
         Task {
-            await appDependency.logService.bootstrap()
-            appDependency.logService.notice(.launchApp)
+            await appServices.logService.bootstrap()
+            appServices.logService.notice(.launchApp)
         }
         NSApp.servicesProvider = ServicesProvider.shared
         NSUpdateDynamicServices()
     }
-
-    public func applicationWillTerminate(_ notification: Notification) {}
 
     public func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         true

@@ -8,13 +8,11 @@
 
 import AppKit
 import DataLayer
-import Foundation
 import Logging
 import UniformTypeIdentifiers
 
 public actor CanvasService {
     private let fileManagerClient: FileManagerClient
-    private let nsWorkspaceClient: NSWorkspaceClient
 
     nonisolated lazy var homeDirectory: URL = {
         fileManagerClient
@@ -28,12 +26,8 @@ public actor CanvasService {
             }
     }()
 
-    public init(
-        _ fileManagerClient: FileManagerClient,
-        _ nsWorkspaceClient: NSWorkspaceClient
-    ) {
+    public init(_ fileManagerClient: FileManagerClient) {
         self.fileManagerClient = fileManagerClient
-        self.nsWorkspaceClient = nsWorkspaceClient
     }
 
     public nonisolated func createCanvas(
@@ -64,12 +58,6 @@ public actor CanvasService {
             throw CanvasError.failedToConvertDataFromImageRep
         }
         return data
-    }
-
-    public nonisolated func openCanvas(url: URL) async throws {
-        if let appURL = nsWorkspaceClient.urlForApplication("com.apple.Preview") {
-            _ = try await nsWorkspaceClient.open([url], appURL)
-        }
     }
 }
 

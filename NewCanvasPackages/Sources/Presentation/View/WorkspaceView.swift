@@ -15,10 +15,11 @@ struct WorkspaceView: View {
     @Environment(\.dismissWindow) private var dismissWindow
 
     init(
+        nsWorkspaceClient: NSWorkspaceClient,
         canvasService: CanvasService,
         logService: LogService
     ) {
-        viewModel = .init(canvasService, logService)
+        viewModel = .init(nsWorkspaceClient, canvasService, logService)
     }
 
     var body: some View {
@@ -87,7 +88,8 @@ struct WorkspaceView: View {
 
 #Preview {
     WorkspaceView(
-        canvasService: .init(.testValue, .testValue),
+        nsWorkspaceClient: .testValue,
+        canvasService: .init(.testValue),
         logService: .init(.testValue)
     )
 }

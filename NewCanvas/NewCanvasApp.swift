@@ -15,6 +15,7 @@ struct NewCanvasApp: App {
 
     var body: some Scene {
         WorkspaceWindow()
-            .environment(\.appDependency, appDelegate.appDependency)
+            .environment(\.appDependencies, appDelegate.appDependencies)
+            .environment(\.appServices, appDelegate.appServices)
     }
 }

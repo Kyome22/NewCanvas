@@ -10,15 +10,17 @@ import Domain
 import SwiftUI
 
 public struct WorkspaceWindow: Scene {
-    @Environment(\.appDependency) private var appDependency
+    @Environment(\.appDependencies) private var appDependencies
+    @Environment(\.appServices) private var appServices
 
     public init() {}
 
     public var body: some Scene {
         Window(Text("appTitle", bundle: .module), id: "workspace") {
             WorkspaceView(
-                canvasService: appDependency.canvasService,
-                logService: appDependency.logService
+                nsWorkspaceClient: appDependencies.nsWorkspaceClient,
+                canvasService: appServices.canvasService,
+                logService: appServices.logService
             )
             .windowMinimizeDisabled()
         }
