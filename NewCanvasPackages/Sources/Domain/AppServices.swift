@@ -14,7 +14,8 @@ public final class AppServices: Sendable {
     public let logService: LogService
 
     public nonisolated init(appDependencies: AppDependencies) {
-        canvasService = .init(appDependencies.fileManagerClient)
+        canvasService = .init(appDependencies.cgContextClient,
+                              appDependencies.fileManagerClient)
         logService = .init(appDependencies.loggingSystemClient)
     }
 }

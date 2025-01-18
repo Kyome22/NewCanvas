@@ -10,15 +10,18 @@ import DataLayer
 import SwiftUI
 
 public final class AppDependencies: Sendable {
+    public let cgContextClient: CGContextClient
     public let fileManagerClient: FileManagerClient
     public let loggingSystemClient: LoggingSystemClient
     public let nsWorkspaceClient: NSWorkspaceClient
 
     public nonisolated init(
+        cgContextClient: CGContextClient = .liveValue,
         fileManagerClient: FileManagerClient = .liveValue,
         loggingSystemClient: LoggingSystemClient = .liveValue,
         nsWorkspaceClient: NSWorkspaceClient = .liveValue
     ) {
+        self.cgContextClient = cgContextClient
         self.fileManagerClient = fileManagerClient
         self.loggingSystemClient = loggingSystemClient
         self.nsWorkspaceClient = nsWorkspaceClient
@@ -27,6 +30,7 @@ public final class AppDependencies: Sendable {
 
 struct AppDependenciesKey: EnvironmentKey {
     static let defaultValue = AppDependencies(
+        cgContextClient: .testValue,
         fileManagerClient: .testValue,
         loggingSystemClient: .testValue,
         nsWorkspaceClient: .testValue

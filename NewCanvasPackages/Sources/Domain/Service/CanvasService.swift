@@ -12,6 +12,7 @@ import Logging
 import UniformTypeIdentifiers
 
 public actor CanvasService {
+    private let cgContextClient: CGContextClient
     private let fileManagerClient: FileManagerClient
 
     nonisolated lazy var homeDirectory: URL = {
@@ -26,7 +27,11 @@ public actor CanvasService {
             }
     }()
 
-    public init(_ fileManagerClient: FileManagerClient) {
+    public init(
+        _ cgContextClient: CGContextClient,
+        _ fileManagerClient: FileManagerClient
+    ) {
+        self.cgContextClient = cgContextClient
         self.fileManagerClient = fileManagerClient
     }
 
@@ -49,7 +54,7 @@ public actor CanvasService {
         cgContext.interpolationQuality = .high
         cgContext.setFillColor(fillColor)
         cgContext.fill(CGRect(origin: .zero, size: size))
-        guard let cgImage = cgContext.makeImage() else {
+        guard let cgImage = cgContextClient.makeImage(cgContext) else {
             throw CanvasError.failedToMakeImageFromCGContext
         }
         let bitmap = NSBitmapImageRep(cgImage: cgImage)
